@@ -3,7 +3,7 @@ pub fn variable_ownership() {
     let mut s = String::from("Hello String!");
     s.push_str(", This is Extra");
     println!("{}", s);
-    
+
     let x = 5;
     let y = x;
     println!("x = {}, y = {}", x, y);

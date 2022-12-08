@@ -1,5 +1,6 @@
 mod fibonacci;
 mod ownership;
+mod structs;
 use rand::Rng;
 use std::{cmp::Ordering, io};
 
@@ -15,7 +16,9 @@ fn main() {
     control_flow();
     println!("##### Fibonacci Func Start!#######");
     fibonacci::fibonacci_num(10);
-    ownership::variable_ownership()
+    ownership::variable_ownership();
+    println!("##### Structs Start!#######");
+    structs::stuct_test();
 }
 
 fn guess_game(is_playing: bool) {

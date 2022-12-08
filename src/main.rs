@@ -1,3 +1,5 @@
+mod fibonacci;
+mod ownership;
 use rand::Rng;
 use std::{cmp::Ordering, io};
 
@@ -12,7 +14,8 @@ fn main() {
     println!("#######Control Flows Start!#######");
     control_flow();
     println!("##### Fibonacci Func Start!#######");
-    fibonacci_num(10);
+    fibonacci::fibonacci_num(10);
+    ownership::variable_ownership()
 }
 
 fn guess_game(is_playing: bool) {
@@ -173,17 +176,4 @@ fn control_flow() {
         count += 1;
     }
     println!("End count = {count}");
-}
-
-fn fibonacci_num(n: isize) {
-    let mut count = 0;
-    let mut num1 = 0;
-    let mut num2 = 1;
-    while count < n {
-        print!("{num1} + ");
-        let sum = num1 + num2;
-        num1 = num2;
-        num2 = sum;
-        count += 1;
-    }
 }

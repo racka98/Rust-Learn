@@ -1,6 +1,7 @@
 mod collections;
 mod enums;
 mod error_handling;
+mod generics_traits_lifetimes;
 mod fibonacci;
 mod ownership;
 mod structs;
@@ -28,6 +29,8 @@ fn main() {
     collections::collections_actions();
     println!("##### Error Handling Start! #######");
     error_handling::error_handling();
+    println!("##### Generics, Traits & Lifetimes Start! #######");
+    generics_traits_lifetimes::actions();
 }
 
 fn guess_game(is_playing: bool) {

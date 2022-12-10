@@ -1,3 +1,4 @@
+mod collections;
 mod enums;
 mod fibonacci;
 mod ownership;
@@ -22,6 +23,8 @@ fn main() {
     structs::stuct_test();
     println!("##### Enums Start!#######");
     enums::enums_actions();
+    println!("##### Collections Start! #######");
+    collections::collections_actions();
 }
 
 fn guess_game(is_playing: bool) {

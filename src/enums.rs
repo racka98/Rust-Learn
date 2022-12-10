@@ -76,7 +76,6 @@ enum Message {
 
 impl Message {
     fn call(&self) {
-        let value = &*self;
         match self {
             Message::Quit => println!("Quiting"),
             Message::Move { x, y } => println!("Moving: x = {}, y = {}", x, y),

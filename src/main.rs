@@ -1,5 +1,6 @@
 mod collections;
 mod enums;
+mod error_handling;
 mod fibonacci;
 mod ownership;
 mod structs;
@@ -25,6 +26,8 @@ fn main() {
     enums::enums_actions();
     println!("##### Collections Start! #######");
     collections::collections_actions();
+    println!("##### Error Handling Start! #######");
+    error_handling::error_handling();
 }
 
 fn guess_game(is_playing: bool) {

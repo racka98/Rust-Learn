@@ -1,0 +1,5 @@
+This a text file found here
+
+This is the next line
+
+Lets see how UTF8 is handled

@@ -5,6 +5,7 @@ mod generics_traits_lifetimes;
 mod fibonacci;
 mod ownership;
 mod structs;
+mod tests;
 use rand::Rng;
 use std::{cmp::Ordering, io};
 

@@ -1,5 +1,5 @@
 # Rust Learn
 
-Files used to learn Rust lang
+[![CI/CD Pipeline](https://github.com/racka98/Rust-Learn/actions/workflows/ci-cd-pipeline.yml/badge.svg)](https://github.com/racka98/Rust-Learn/actions/workflows/ci-cd-pipeline.yml)
 
-Following the Rust Book
+Files used to learn Rust lang. Following the Rust Book

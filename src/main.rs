@@ -1,3 +1,4 @@
+mod  closures;
 mod collections;
 mod enums;
 mod error_handling;
@@ -32,6 +33,8 @@ fn main() {
     error_handling::error_handling();
     println!("##### Generics, Traits & Lifetimes Start! #######");
     generics_traits_lifetimes::actions();
+    println!("##### Closures & FP Start! #######");
+    closures::actions();
 }
 
 fn guess_game(is_playing: bool) {

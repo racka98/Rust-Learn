@@ -54,8 +54,8 @@ pub fn stuct_test() {
 
     // Struct update syntax. We create user3 from user2
     // Note: This "moves" the data from user2
-    // But it wouldn't be move if we assigned both email and username. The left active and sign_in_count
-    // implement the Copy trait so they will leave the user2 valid
+    // But it wouldn't be moved if we assigned both email and username.
+    // The left active and sign_in_count implement the Copy trait so they will leave the user2 valid
     let user3 = User {
         email: String::from("user3@email.com"),
         ..user2 // This should come last

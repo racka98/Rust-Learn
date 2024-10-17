@@ -29,7 +29,7 @@ pub fn collections_actions() {
     let third: Option<&i32> = v.get(2);
     match third {
         Some(value) => println!("The third element is {}", value),
-        None => println!("No third element"),
+        none => println!("No third element"),
     };
 
     // Using enums to hold different values in a Vector

@@ -50,7 +50,7 @@ fn guess_game(is_playing: bool) {
             let mut guess = String::new();
             io::stdin()
                 .read_line(&mut guess)
-                .expect("Failed to readl line");
+                .expect("Failed to read line");
 
             let guess: u32 = match guess.trim().parse() {
                 Ok(num) => num,

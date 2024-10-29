@@ -7,6 +7,8 @@ mod fibonacci;
 mod ownership;
 mod structs;
 mod tests;
+mod smart_pointers;
+
 use rand::Rng;
 use std::{cmp::Ordering, io};
 
@@ -35,6 +37,8 @@ fn main() {
     generics_traits_lifetimes::actions();
     println!("##### Closures & FP Start! #######");
     closures::actions();
+    println!("##### Smart Pointers Start! #######");
+    smart_pointers::smart_pointers();
 }
 
 fn guess_game(is_playing: bool) {

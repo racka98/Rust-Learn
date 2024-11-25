@@ -1,4 +1,4 @@
-mod  closures;
+mod closures;
 mod collections;
 mod enums;
 mod error_handling;
@@ -8,6 +8,7 @@ mod ownership;
 mod structs;
 mod tests;
 mod smart_pointers;
+mod concurrency;
 
 use rand::Rng;
 use std::{cmp::Ordering, io};
@@ -39,6 +40,8 @@ fn main() {
     closures::actions();
     println!("##### Smart Pointers Start! #######");
     smart_pointers::smart_pointers();
+    println!("##### Concurrency Start! #######");
+    concurrency::concurrency();
 }
 
 fn guess_game(is_playing: bool) {
